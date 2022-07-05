@@ -55,12 +55,6 @@ class PrototypesController < ApplicationController
   end
 
   def contributor_confirmation
-    #   if current_user == @prototype.user
-    #     render :edit
-    #   else
-    #     redirect_to root_path
-    #   end
-    # end
     redirect_to root_path unless current_user == @prototype.user
   end
 end
